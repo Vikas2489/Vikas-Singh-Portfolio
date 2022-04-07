@@ -118,11 +118,11 @@ body {
     padding: 3rem 0;
     color: white;
     .about {
-        color: white;
+        color: black;
         text-decoration: underline;
         display: inline-block;
         &:hover {
-            color: black;
+            color: white;
         }
     }
     h3 {
@@ -133,13 +133,13 @@ body {
         line-height: 1.4;
     }
     p:last-of-type {
-        color: rgba(207, 221, 235, 0.746);
-        line-height: 1.5;
+        color: white;
+        line-height: 1.7;
     }
     .code-strategy {
         font-size: 2rem;
         font-weight: bold;
-        color: black;
+        color: aliceblue;
         line-height: 1.3;
         border-top: 1px dashed white;
         border-bottom: 1px dashed white;
@@ -152,7 +152,8 @@ body {
 }
 
 footer {
-    padding: 2rem 0 0 0;
+    padding: 4rem 0 0 0;
+    background-color: aliceblue;
     p:first-child {
         font-size: 1.3rem;
         font-weight: 450;
@@ -161,6 +162,7 @@ footer {
 }
 
 .social-links {
+    padding-bottom: 2rem;
     i {
         height: 3rem;
         width: 3rem;
@@ -198,6 +200,42 @@ footer {
     }
 }
 
+.work-process {
+    background-color: aliceblue;
+    padding: 2rem 0;
+    p:first-child {
+        text-decoration: underline;
+        display: inline-block;
+        font-size: 0.89rem;
+    }
+    h3 {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+        font-weight: 620;
+    }
+    .strategy {
+        margin-top: 2rem;
+        background-color: rgba(#1560AF, 0.8);
+        border-radius: 20px;
+        padding: 2rem;
+        color: white;
+        i {
+            margin-left: 2rem;
+            display: block;
+        }
+        p {
+            margin: 0.99rem 0;
+            font-size: 0.77rem;
+            font-weight: 350;
+            line-height: 1.2rem;
+        }
+    }
+    .bulb-1 {
+        border-bottom: 1px solid aliceblue;
+        padding-bottom: 0.7rem;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .sm-flex-100 {
         flex-basis: 100%;
@@ -222,6 +260,9 @@ footer {
     .sm-flex-column {
         flex-direction: column;
     }
+    .hero {
+        padding-top: -6rem;
+    }
     .blue-bg {
         .sm-flex-100 {
             margin: 1.5rem 0;
@@ -238,6 +279,9 @@ footer {
     }
     .sm-flex-column {
         flex-direction: column;
+    }
+    .hero {
+        padding-top: -6rem;
     }
     .blue-bg {
         .sm-flex-100 {
