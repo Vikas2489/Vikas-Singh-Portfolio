@@ -383,6 +383,7 @@ footer p:first-child {
   color: white;
   background-color: black;
   line-height: 3rem;
+  transition: all 20ms linear;
   margin-left: 1.2rem;
   font-size: 1.4rem;
 }
@@ -412,6 +413,40 @@ footer p:first-child {
 }
 
 @media screen and (max-width: 1100px) {
+  .sm-flex-100 {
+    flex-basis: 100%;
+  }
+
+  .sm-flex-column {
+    flex-direction: column;
+  }
+
+  .blue-bg .sm-flex-100 {
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 10px;
+  }
+
+  .sm-flex-100 {
+    flex-basis: 100%;
+  }
+
+  .sm-flex-column {
+    flex-direction: column;
+  }
+
+  .blue-bg .sm-flex-100 {
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 5px;
+  }
+
   .sm-flex-100 {
     flex-basis: 100%;
   }
