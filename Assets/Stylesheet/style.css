@@ -427,13 +427,15 @@ footer p:first-child {
 }
 .work-process p:first-child {
   text-decoration: underline;
-  display: inline-block;
+  display: block;
   font-size: 0.89rem;
 }
 .work-process h3 {
   margin: 1.5rem 0;
   font-size: 2rem;
-  font-weight: 620;
+  font-weight: 510;
+  color: black;
+  display: inline-block;
 }
 .work-process .strategy {
   margin-top: 2rem;
@@ -460,6 +462,10 @@ footer p:first-child {
 @media screen and (max-width: 1100px) {
   .sm-flex-100 {
     flex-basis: 100%;
+  }
+
+  .sm-flex-45 {
+    flex-basis: 45%;
   }
 
   .sm-flex-column {
